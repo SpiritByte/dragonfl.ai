@@ -1179,7 +1179,10 @@ html {
   justify-content: center;
   max-width: 80rem;
   gap: 1rem;
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 4rem;
+  padding-bottom: 6.9rem;
 }
 
 .input {
@@ -2333,7 +2336,6 @@ html {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 2rem;
-  font-size: 1.24rem; /* Adjust the value as needed */
 }
 
 .text-center {

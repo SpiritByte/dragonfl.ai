@@ -1,45 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!doctype html>
+<html>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/dist/output.css" rel="stylesheet">
     <title>dragonfl.ai</title>
     <link rel="icon" type="image/x-icon" href="img/logo.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet">
+    <style>
+        /* Add styles to the video container to make it cover the entire viewport */
+        #sus {
+            opacity: 0.1;
+        }
+  
+        .navbar {
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              z-index: 100;
+        }
+              /* Define a CSS class for the colored text */
+        .colored-text {
+          color: #84d6b6;
+          margin-right: -3x;
+          /* Change this to your desired color */
+        }
+
+        .image-container img {
+            width: 50px; /* Adjust the width as needed */
+            height: auto; /* Maintain the aspect ratio */
+        }
+
+        .special-word {
+            font-family: 'Space Mono', monospace;
+            /* Replace 'Open Sans' with the actual font name */
+        }
+
+    </style>
 </head>
 <body>
-<!-- navbar -->
-<div class="navbar bg-logogreen">
+  <!-- navbar -->
+  <div class="navbar bg-logogreen">
     <div class="navbar-start">
       <div class="dropdown">
         <label tabindex="0" class="btn btn-ghost lg:hidden">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
         </label>
         <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-          <li><a>Features</a></li>
-          <li><a>Why dragonfl.ai?</a></li>
-          <li><a>Login</a></li>
+          <li><a onclick="scrollToFeatures()">Features</a></li>
+          <li><a onclick="scrollToAbout()">Why dragonfl.ai?</a></li>
+          <li><a href="/dist/login.html">Login</a></li>
         </ul>
       </div>
-      <a class="btn btn-ghost normal-case text-xl"><span class="special-word"><span class="text-emerald-400">dragonfl.</span>ai</span></a>
+      <a href="/dist/index.html" class="btn btn-ghost normal-case text-xl">
+        <span class="image-container"><img src="img/logodragonfly-transparent.png" alt="An Image"></span>
+        <span class="special-word"><span class="colored-text">dragonfl.</span>ai</span>
+      </a> 
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
-        <li><a>Why dragonfl.ai?</a></li>
-        <li><a>Features</a></li>
-        <li><a>Login</a></li>
+        <li><a onclick="scrollToFeatures()">Features</a></li>
+        <li><a onclick="scrollToAbout()">Why dragonfl.ai?</a></li>
+        <li><a href="/dist/login.html">Login</a></li>
       </ul>
     </div>
     <div class="navbar-end">
-      <a class="btn">GET STARTED</a>
+      <a href="/dist/register.html" class= "btn">GET STARTED</a>
     </div>
   </div>
+  <br><br><br>
   <h1 class="text-3xl font-bold text-center mt-10">WELCOME BACK, USER!</h1>
+  <br><br>
   <div class="h-auto flex">
         <!-- bhavya -->
         <div class="w-full mt-10">
             <div class="card w-2/3 bg-base-100 shadow-xl mx-auto">
-                <figure><img class="h-48" src="img/bhavya.jpg" alt="bhavya picture" /></figure>
+                <figure><img class="h-48" src="" alt="bhavya picture" /></figure>
                 <div class="card-body">
                 <h2 class="card-title mx-auto">
                     BHAVYA PATEL
@@ -64,7 +101,7 @@
         <!-- sajan -->
         <div class="w-full mt-10">
             <div class="card w-2/3 bg-base-100 shadow-xl mx-auto">
-                <figure><img class="h-48" src="img/sajan.jpg" alt="sajan picture" /></figure>
+                <figure><img class="h-48" src="" alt="sajan picture" /></figure>
                 <div class="card-body">
                 <h2 class="card-title mx-auto">
                     SAJAN PAVENTHAN
