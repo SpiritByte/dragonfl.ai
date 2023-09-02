@@ -48,8 +48,8 @@
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
             </label>
             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>Features</a></li>
-              <li><a>Why dragonfl.ai?</a></li>
+              <li><a onclick="scrollToFeatures()">Features</a></li>
+              <li><a onclick="scrollToAbout()">Why dragonfl.ai?</a></li>
               <li><a href="/dist/login.html">Login</a></li>
             </ul>
           </div>
@@ -57,8 +57,8 @@
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li><a>Why dragonfl.ai?</a></li>
-            <li><a>Features</a></li>
+            <li><a onclick="scrollToFeatures()">Features</a></li>
+            <li><a onclick="scrollToAbout()">Why dragonfl.ai?</a></li>
             <li><a href="/dist/login.html">Login</a></li>
           </ul>
         </div>
@@ -86,13 +86,12 @@
           </div>
         </div>
       </div>
-
       <!-- why dragonfl.ai -->
-    <div class="hero h-auto bg-logogreen">
+    <div class="hero h-auto bg-logogreen" id="scrollToAbout">
         <div class="hero-content flex-col lg:flex-row-reverse">
             <div class="text-center lg:text-left">
                 <h1 class="text-5xl font-bold"><span class="special-word">Why dragonfl.ai?</span></h1>
-                <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi. Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi. Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                <p class="py-6">At dragonfl.ai, we are committed to making a meaningful impact on the lives of the visually impaired. With a mission to provide a new way of "seeing" through sound, we strive to empower those who are blind to navigate and interact with their environment independently. According to the World Health Organization (WHO), approximately 2.2 billion people worldwide have a visual impairment, with an estimated 1 billion people experiencing moderate to severe visual impairment or blindness. Our innovative machine learning model, dragonfl.ai, seeks to enhance accessibility, with real-time object detection, text-to-speech integration, and navigation assistance, offering a transformative solution for the visually impaired community. We are dedicated to advancing accessibility and inclusivity through technology, fostering a world where everyone can experience the world with greater independence.</p>
                 <a href="/dist/register.html">
                   <button class="btn btn-outline w-full">REGISTER NOW</button>
                 </a>
@@ -104,7 +103,7 @@
     </div>   
     
     <!-- feature -->
-    <div class="h-auto">
+    <div class="h-auto" id="scrollToFeature">
         <h1 class="text-center text-5xl my-10 font-bold"><span class="special-word">Features</span></h1>
         <div class="w-full flex">
             <div class="w-1/3 text-center">
@@ -141,5 +140,16 @@
     <footer class="bg-base-200 text-center py-3 custom-footer">
       <p>&copy; 2023 dragonfl.ai. All Rights Reserved.</p>
     </footer>
+    <script>
+      function scrollToFeatures() {
+          const section = document.getElementById('scrollToFeature');
+          section.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      function scrollToAbout() {
+          const section = document.getElementById('scrollToAbout');
+          section.scrollIntoView({ behavior: 'smooth' });
+      }
+  </script>
 </body>
 </html>

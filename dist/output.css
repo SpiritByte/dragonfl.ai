@@ -1968,7 +1968,7 @@ html {
 
 .my-10 {
   margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 5rem;
 }
 
 .my-auto {
@@ -2129,7 +2129,8 @@ html {
 
 .py-6 {
   padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 2rem;
+  font-size: 1.24rem; /* Adjust the value as needed */
 }
 
 .text-center {
@@ -2206,5 +2207,5 @@ html {
 
 
 .custom-footer {
-  margin-top: 70px; /* Increase this value as needed */
+  padding: 50px;
 }
