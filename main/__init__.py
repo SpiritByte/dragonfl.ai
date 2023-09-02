@@ -11,8 +11,8 @@ app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///test.db' #Configure a DB usin
 app.config['SECRET_KEY'] = 'e5c905100a086b1d7cb9a75f' #Configure a security key to ensure a secure connection
 
 #Create database
-db = SQLAlchemy()
-db.init_app(app)
+datab = SQLAlchemy()
+datab.init_app(app)
 
 #Bcrypt class to store hashed passwords
 bcrypt = Bcrypt(app)

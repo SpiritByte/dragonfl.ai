@@ -1,16 +1,16 @@
-from main import app, db, UserMixin, bcrypt, loginmanager
+from main import app, datab, UserMixin, bcrypt, loginmanager
 
 @loginmanager.user_loader #Required property for the users to be authenticated
 def load_user(user_id):
     return User.query.get(user_id)
 
 #Create class user with Database Model, create various columns
-class User(db.Model, UserMixin): #Use UserMixin class to add prexisting methods
+class User(datab.Model, UserMixin): #Use UserMixin class to add prexisting methods
     #Create id wtih primary key, and standard user details
-    id = db.Column(db.Integer(), primary_key = True)
-    username = db.Column(db.String(length = 45), nullable = False, unique = True)
-    email_address = db.Column(db.String(), unique = True, nullable = False)
-    password_hash = db.Column(db.String(), nullable = False)
+    id = datab.Column(datab.Integer(), primary_key = True)
+    username = datab.Column(datab.String(length = 45), nullable = False, unique = True)
+    email_address = datab.Column(datab.String(), unique = True, nullable = False)
+    password_hash = datab.Column(datab.String(), nullable = False)
 
     #Create a password property
     @property

@@ -1,7 +1,21 @@
 #Import app from the init file, and other modules
-from main import app, db, login_user, url_for, redirect, render_template, flash
+from main import app, datab, login_user, url_for, redirect, render_template, flash
 from main.form import Register, LoginForm
 from main.model import User
+
+import firebase_admin
+from firebase_admin import credentials
+from firebase_admin import db
+
+print("started db script")
+
+cred = credentials.Certificate("serviceAccountKey.json")
+firebase_admin.initialize_app(cred, {
+    "databaseURL": "https://rythmhacks-4811d-default-rtdb.firebaseio.com/",
+})
+
+global ref 
+ref = db.reference("Users")
 
 @app.route("/")
 def index():
@@ -16,8 +30,8 @@ def register_page():
                             password = form.password.data)
       #Add to database
       with app.app_context():
-          db.session.add(user_to_create)
-          db.session.commit()
+          datab.session.add(user_to_create)
+          datab.session.commit()
           login_user(user_to_create)
 
       return redirect(url_for("dashboard_page"))
@@ -41,4 +55,6 @@ def login_page():
 
 @app.route("/dashboard")
 def dashboard_page():
-  return render_template("dashboard.html")
+  global ref
+  users = ref.get()
+  return render_template("dashboard.html", users = users)

@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\bhavy\OneDrive\Documents\GitHub\dragonfl.ai\project"
+VIRTUAL_ENV="C:\Users\bhavy\OneDrive\Documents\GitHub\dragonfl.ai2\project"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

@@ -1,23 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register</title>
-</head>
-<body>
-  <form method = "POST">
-    {{form.hidden_tag()}}
-    {{form.username.label(class = "")}}
-    {{form.username(class = "")}}
-    {{form.email_address.label(class = "")}}
-    {{form.email_address(class = "")}}
-    {{form.password.label(class = "")}}
-    {{form.password(class = "")}}
-    {{form.password_confirm.label(class = "")}}
-    {{form.password_confirm(class = "")}}
-    {{form.submit(class = "")}}
-  </form>
+{% extends 'base.html' %}
+{% block head %} {% endblock %}
+{% block body %}          
+    <div class="h-screen bg-logogreen2 flex">
+        <div class="card flex-shrink-0 w-1/3 self-center shadow-2xl bg-emerald-950 border-white ml-48">
+            <div class="card-body ">
+            <form method = "POST">
+                {{form.hidden_tag()}}
+                <div class="form-control">
+                  {{form.username.label(class = "")}}
+                  {{form.username(class = "input input-bordered bg-white", placeholder = "Username")}}
+                  {{form.email_address.label(class = "")}}
+                  {{form.email_address(class = "input input-bordered bg-white", placeholder = "Email")}}
+                  {{form.password.label(class = "")}}
+                  {{form.password(class = "input input-bordered bg-white", placeholder = "Password")}}
+                  {{form.password_confirm.label(class = "")}}
+                  {{form.password_confirm(class = "input input-bordered bg-white", placeholder = "Confirm Password")}}
+                </div>
+               
+                <div class="form-control mt-6">
+                  {{form.submit(class = "btn bg-logogreen border-white")}}
+                </div>
+            </form>
+            </div>
+            </div>
+        <!-- logo -->
+        <div class="w-1/2 my-auto">
+            <img class="h-7/8 mx-auto" src="{{url_for('static', filename = 'image/logo2.png')}}" alt="dark green background logo">
+            <h3 class="text-lg mx-48">Already have an account?</h3>
+            <a href="/dist/login.html">
+                <button class="btn btn-lg bg-logogreen mx-48 w-1/2">LOGIN</button>
+            </a>
+        </div>
 
-</body>
-</html>
+    </div>
+{% block footer %} {% endblock %}
+{% endblock %}
