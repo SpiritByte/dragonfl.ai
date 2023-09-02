@@ -778,6 +778,7 @@ html {
   font-weight: 600;
   text-decoration-line: none;
   border-width: var(--border-btn, 1px);
+  border: 0;
   animation: button-pop var(--animation-btn, 0.25s) ease-out;
   text-transform: var(--btn-text-case, uppercase);
   --tw-border-opacity: 1;

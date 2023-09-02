@@ -2,6 +2,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <title>dragonfl.ai</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
     <style>
@@ -16,7 +18,19 @@
               left: 0;
               width: 100%;
               z-index: 100;
-          }
+        }
+              /* Define a CSS class for the colored text */
+        .colored-text {
+          color: #84d6b6;
+          margin-right: -7px;
+          /* Change this to your desired color */
+        }
+
+        .image-container img {
+            width: 50px; /* Adjust the width as needed */
+            height: auto; /* Maintain the aspect ratio */
+        }
+
     </style>
 </head>
 <body>
@@ -33,12 +47,12 @@
               <li><a>Login</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost normal-case text-xl">dragonfl<span class="text-emerald-400">ai</span></a>
+          <a class="btn btn-ghost normal-case text-xl"><span class="image-container"><img src="img/logodragonfly-transparent.png" alt="An Image"></span><span class="colored-text">dragonfl.</span>ai</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li><a>Features</a></li>
             <li><a>Why dragonfl.ai?</a></li>
+            <li><a>Features</a></li>
             <li><a>Login</a></li>
           </ul>
         </div>
@@ -74,7 +88,7 @@
                 <button class="btn btn-outline w-full">REGISTER NOW</button>
             </div>
             <div class="flex-shrink-0 w-full max-w-sm">
-            <img class="h-1/2" src="img/DRAGONFL.AI (1).png" alt="green dragonfl.ai logo">
+            <img class="h-1/2" src="img/logo.png" alt="green dragonfl.ai logo">
             </div>
         </div>
     </div>   

@@ -2,11 +2,10 @@
 module.exports = {
   content: ["./dist/*.{html,js}"],
   theme: {
-    extend: {},
-    colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
-      'logogreen': '#0D442F',
+    extend: {
+      colors: {
+        'logogreen': '#0D442F',
+      },
     },
   },
   plugins: [require("daisyui")],
