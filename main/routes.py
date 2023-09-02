@@ -5,7 +5,7 @@ from main.model import User
 
 @app.route("/")
 def index():
-  return "Hello World"
+  return render_template("index.html")
 
 #Register route with post and get methods
 @app.route("/register", methods = ["POST", "GET"])
