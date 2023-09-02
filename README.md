@@ -1,4 +1,4 @@
-# dragonfl.ai - Sight Through Sound 🐉👁️🔊
+# dragonfl.ai - Sight Through Sound
 
 Welcome to dragonfl.ai, an innovative machine learning model that empowers the visually impaired to perceive their surroundings using sound.
 
