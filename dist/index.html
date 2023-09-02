@@ -5,6 +5,7 @@
     <title>dragonfl.ai</title>
     <link rel="icon" type="image/x-icon" href="img/logo.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="/dist/output.css" rel="stylesheet">
     <style>
         /* Add styles to the video container to make it cover the entire viewport */
@@ -22,13 +23,18 @@
               /* Define a CSS class for the colored text */
         .colored-text {
           color: #84d6b6;
-          margin-right: -7px;
+          margin-right: -3x;
           /* Change this to your desired color */
         }
 
         .image-container img {
             width: 50px; /* Adjust the width as needed */
             height: auto; /* Maintain the aspect ratio */
+        }
+
+        .special-word {
+            font-family: 'Space Mono', monospace;
+            /* Replace 'Open Sans' with the actual font name */
         }
 
     </style>
@@ -47,7 +53,7 @@
               <li><a>Login</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost normal-case text-xl"><span class="image-container"><img src="img/logodragonfly-transparent.png" alt="An Image"></span><span class="colored-text">dragonfl.</span>ai</a>
+          <a class="btn btn-ghost normal-case text-xl"><span class="image-container"><img src="img/logodragonfly-transparent.png" alt="An Image"></span><span class="special-word"><span class="colored-text">dragonfl.</span>ai</span></a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
@@ -72,7 +78,7 @@
         </div>
         <div class="hero-content text-center">
           <div class="max-w-md">
-            <h1 class="text-7xl font-bold">dragonfl.ai</h1>
+            <h1 class="text-7xl font-bold"><span class="special-word"><span class="colored-text">dragonfl.</span>ai</span></h1>
             <p class="py-6 text-3xl">SIGHT THROUGH SOUND</p>
             <button class="btn bg-logogreen btn-lg">GET STARTED</button>
           </div>
