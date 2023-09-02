@@ -811,6 +811,7 @@ html {
   min-height: 3rem;
   font-size: 0.875rem;
   line-height: 1em;
+  border: 0px;
   gap: 0.5rem;
   font-weight: 600;
   text-decoration-line: none;
