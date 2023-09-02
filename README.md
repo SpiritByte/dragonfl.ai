@@ -14,7 +14,7 @@ Welcome to dragonfl.ai, an innovative machine learning model that empowers the v
 
 ## Introduction
 
-![dragonfl.ai Logo](./img/logodragonfly.png)
+![dragonfl.ai Logo](./dist/img/logodragonfly.png)
 
 **dragonfl.ai** is a groundbreaking AI-powered solution that aims to enhance the independence and quality of life for the blind and visually impaired. Our mission is to transform visual information into auditory signals, providing a new perspective on the world.
 
