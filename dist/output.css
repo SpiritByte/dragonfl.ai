@@ -2203,3 +2203,8 @@ html {
     text-align: left;
   }
 }
+
+
+.custom-footer {
+  margin-top: 70px; /* Increase this value as needed */
+}
