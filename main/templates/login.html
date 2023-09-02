@@ -16,9 +16,9 @@
       {{form.hidden_tag()}}
       <div class="form-control">
         {{form.username.label(class = "")}}
-        {{form.username(class = "input input-bordered bg-white")}}
+        {{form.username(class = "input input-bordered bg-white", placeholder = "Username")}}
         {{form.password.label(class = "")}}
-        {{form.password(class = " input input-bordered bg-white")}}
+        {{form.password(class = " input input-bordered bg-white", placeholder = "Password")}}
       </div>
       <div class="form-control mt-6">
         <label class="label">
@@ -30,8 +30,6 @@
   </div>
 </div>
 </div>
-
-
 
   {% block footer %}{% endblock %}
 {% endblock %}
