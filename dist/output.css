@@ -951,6 +951,7 @@ html {
 }
 
 .hero {
+  z-index: 2;
   display: grid;
   width: 100%;
   place-items: center;
@@ -964,7 +965,7 @@ html {
 }
 
 .hero-content {
-  z-index: 0;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1033,6 +1034,7 @@ html {
 }
 
 .navbar {
+  z-index: 2;
   display: flex;
   align-items: center;
   padding: var(--navbar-padding, 0.5rem);
@@ -1046,15 +1048,18 @@ html {
 }
 
 .navbar-start {
+  z-index: 2;
   width: 50%;
   justify-content: flex-start;
 }
 
 .navbar-center {
+  z-index: 2;
   flex-shrink: 0;
 }
 
 .navbar-end {
+  z-index: 2;
   width: 50%;
   justify-content: flex-end;
 }

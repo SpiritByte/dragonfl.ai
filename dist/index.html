@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
+    <style>
+      /* Add styles to the video container to make it cover the entire viewport */
+      #sus {
+          opacity: 0.1;
+      }
+
+      .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+        }
+    </style>
 </head>
 <body>
     <!-- navbar -->
@@ -35,6 +49,13 @@
       
       <!-- hero -->
       <div class="hero min-h-screen bg-base-200">
+        <div id=sus>
+          <video autoplay loop muted>
+            <source src="dragonflai.mp4" type="video/mp4">
+              <!-- You can add multiple source elements for different video formats -->
+              Your browser does not support the video tag.
+          </video>
+        </div>
         <div class="hero-content text-center">
           <div class="max-w-md">
             <h1 class="text-7xl font-bold">dragonfl.ai</h1>
