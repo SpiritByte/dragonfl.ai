@@ -1,6 +1,6 @@
 # dragonfl.ai - Sight Through Sound
 
-Welcome to dragonfl.ai, an innovative machine learning model that empowers the visually impaired to perceive their surroundings using sound.
+Welcome to dragonfl.ai, an innovative machine-learning model that empowers the visually impaired to perceive their surroundings using sound.
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -45,6 +45,12 @@ Imagine a world where those who are blind can perceive their surroundings, read 
 3. **Audio Feedback**: dragonfl.ai converts visual information into a rich soundscape, where different sounds represent various elements in the environment.
 
 4. **User Interaction**: Users can interact with dragonfl.ai through a mobile app or device to receive real-time feedback.
+
+## Next Steps
+1. **Google Cloud SQL**: Making the current login system compatible with Google Cloud's Hosting
+2. **StreamLit and Google Analytics**: Provide different analytics on the dashboard, that update based on the Firebase Database
+3. **Cloud Functions**
+4. **Hardware**: Taking the vision of the eyewear to a reality
 
 ## Getting Started
 
