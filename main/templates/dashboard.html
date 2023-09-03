@@ -2,13 +2,14 @@
 {% block head %} {% endblock %}
 {% block body %}     
   <br><br><br>
-  <h1 class="text-3xl font-bold text-center mt-10">WELCOME BACK, {{current_user.username}}</h1>
+  <h1 class="text-3xl font-bold text-center mt-10">WELCOME BACK, Alex</h1>
   <br><br>
+  <h1 class="text-2xl font-bold text-center mt-10">Registered Users</h1>
   <div class="h-auto flex">
-        <!-- bhavya -->
+        <!-- Users -->
         {% for user in users %}
         <div class="w-full mt-10">
-          <div class="card w-2/3 bg-base-100 shadow-xl mx-auto">
+          <div class="card w-2/3 bg-base-100 shadow-xl mx-auto border-white border-2">
               <div class="card-body">
               <h2 class="card-title mx-auto">
                   {{users[user]["name"]}}
@@ -35,8 +36,12 @@
               </div>
           </div>
       </div>
-        {% endfor %}
-      
+        {% endfor %} 
+
+  </div>
+  <div class="h-auto my-10 grid grid-cols-2 mx-10">
+    <iframe class="" width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vThijvlbsq5_z3cgS6KHh7tiFza8o2UF1Z_WcP_aJ5O8RgKFlWI_IA6K9Af8g0aBeXrmD2W3B6Ailnn/pubchart?oid=562227510&amp;format=interactive"></iframe>
+    <iframe class="" width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vThijvlbsq5_z3cgS6KHh7tiFza8o2UF1Z_WcP_aJ5O8RgKFlWI_IA6K9Af8g0aBeXrmD2W3B6Ailnn/pubchart?oid=1578716914&amp;format=interactive"></iframe>
   </div>
 {% block footer %}{% endblock %}
 {% endblock %}
