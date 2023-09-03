@@ -36,8 +36,6 @@ Imagine a world where those who are blind can perceive their surroundings, read 
 
 ## How It Works
 
-![dragonfl.ai Workflow](./images/dragonflai-workflow.png)
-
 1. **Image Capture**: dragonfl.ai captures images from a camera or smartphone.
 
 2. **Computer Vision**: The image is processed using state-of-the-art computer vision algorithms to identify objects and text.
